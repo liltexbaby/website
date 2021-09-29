@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  margin:auto;
 }
 
 a {
@@ -13,4 +15,117 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contentContainer {
+  max-width: 70%;
+  margin:auto;
+  
+
+}
+
+
+
+/* dropdown styles*/
+
+.dropdownContainer {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  
+}
+
+.dropdownButton :hover {
+
+  cursor:pointer;
+
+}
+.dropdownContent {
+  height:0px;
+  overflow:hidden;
+  z-index: -200;
+  opacity: 0;
+  background-color:transparent;
+
+}
+
+
+.dropdownItem {
+  padding: 10px;
+  flex-direction: row;
+  border:black;
+  border-style:solid;
+  border-color: transparent;
+}
+
+.dropdownButton:hover{
+
+}
+
+.dropdownItem:hover{
+  border-style:dotted;
+  border-color: black;
+  border-width: 3px;
+}
+
+
+/* showcase styles*/
+
+.showcaseContainer {
+  margin-top:40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  opacity: 0;
+}
+
+
+
+.showcasePaintingContainer{
+
+}
+
+/*header styles*/
+
+.headerContainer{
+padding-top: 20px;
+
+}
+
+.headerContent{
+  display:flex;
+  max-width: 70%;
+  flex-direction: row;
+  padding:10px;
+  margin:auto;
+  justify-content: space-between;
+}
+
+.introContainer{
+  padding:10px;
+  padding-top:30px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+}
+
+.paintingPageContainer{
+  opacity: 0;
+
+}
+
+.paintingContainer{
+  width: 40%;
+}
+
+.projectsContainer {
+  margin-top:40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
