@@ -9,7 +9,8 @@ import Dropdown from '../components/Dropdown'
 import PaintingShowcase from '../components/PaintingShowcase'
 import PrintShowcase from '../components/PrintShowcase'
 import WebDevShowcase from '../components/WebDevShowcase'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import DesignShowcase from '../components/DesignShowcase'
 // import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 
@@ -21,7 +22,7 @@ import { useState } from 'react'
 
 export default function Home({products, paintings}) {
 
-  const [indexMode, setIndexMode] = useState(1)
+  const [indexMode, setIndexMode] = useState(3)
 
   const handleShowcaseMode =()=>{
 
@@ -37,13 +38,32 @@ export default function Home({products, paintings}) {
       return(
         <WebDevShowcase/>
         )
-    }
+      } else if (indexMode == 4){
+        return(
+          <DesignShowcase/>
+          )
+      }
 
 
   }
 
+  useEffect(() => {
+
+    const data = window.localStorage.getItem('indexMode');
+    if (data) {
+      setIndexMode(JSON.parse(data));
+    }
+
+
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('indexMode', indexMode);
+  }, [indexMode]);
+
 
   return (
+    <div className="contentWrapper">
     <div className="contentContainer">
       <Head>
         <title>Jonathan Pinto</title>
@@ -52,7 +72,7 @@ export default function Home({products, paintings}) {
       </Head>
       <div className="introContainer">
       Hi, my name is Jonathan and I'm a 
-      <Dropdown changeMode={indexMode=>setIndexMode(indexMode)}/>
+      <Dropdown changeMode={indexMode=>setIndexMode(indexMode)} currentMode={indexMode}/>
       </div>
 
       
@@ -64,6 +84,7 @@ export default function Home({products, paintings}) {
       
 
       
+    </div>
     </div>
   )
 }
@@ -84,7 +105,6 @@ export async function getStaticProps(){
   const painting_res = await fetch(`${API_URL}/paintings`)
   const paintings = await painting_res.json()
 
-  console.log(paintings)
 
   //Return the products as props
 

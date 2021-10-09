@@ -6,6 +6,7 @@ import { twoDecimals } from '../../utils/format'
 const Product = ({product}) => {
 
     return (
+        
         <div className="contentContainer">
             <Head>
                 {product.meta_title &&
@@ -28,7 +29,6 @@ const Product = ({product}) => {
                 {product.content}
             </p>
         </div>
-
 
     )
 

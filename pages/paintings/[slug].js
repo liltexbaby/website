@@ -4,6 +4,9 @@ import { fromImageToUrl, API_URL } from '../../utils/urls'
 import { twoDecimals } from '../../utils/format'
 import { useEffect, useState, useRef } from 'react'
 import { TweenLite, Power3 } from 'gsap/';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 const Painting = ({painting}) => {
 
@@ -24,6 +27,8 @@ const Painting = ({painting}) => {
       }, [])
 
     return (
+        
+        <div className="contentWrapper">
         <div 
         className="contentContainer">
              <div 
@@ -41,13 +46,23 @@ const Painting = ({painting}) => {
 
 
             </Head>
-            <h3>{painting.title}</h3>
-            <img className="paintingContainer" src={fromImageToUrl(painting.main_image)}/>
             
+            
+            <div  className="paintingContainer">
+
+            <Zoom>
+            <img src={fromImageToUrl(painting.main_image)}/>
+            </Zoom>
+
+            <div className="paintingDescriptionContainer">
+            <h3>{painting.title}</h3>
             <p>
                 {painting.description}
             </p>
             </div>
+            </div>
+            </div>
+        </div>
         </div>
 
 

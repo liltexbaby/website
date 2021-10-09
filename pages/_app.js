@@ -13,10 +13,11 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
     <AuthProvider>
-  <content>
+  <content className="wrapper" id="main">
     <Header/>
     <Component {...pageProps} />
     <Footer/>
+
   </content>
   </AuthProvider>
   
