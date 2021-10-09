@@ -6,6 +6,8 @@ import { useEffect, useState, useRef } from 'react'
 import { TweenLite, Power3 } from 'gsap/';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+import Image from 'next/image'
+
 
 
 const Painting = ({painting}) => {
@@ -51,7 +53,7 @@ const Painting = ({painting}) => {
             <div  className="paintingContainer">
 
             <Zoom>
-            <img src={fromImageToUrl(painting.main_image)}/>
+            <Image layout="responsive" width="100vw" height="100vh" src={fromImageToUrl(painting.main_image)}/>
             </Zoom>
 
             <div className="paintingDescriptionContainer">

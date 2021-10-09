@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import { fromImageToUrl, API_URL } from '../../utils/urls'
 import { twoDecimals } from '../../utils/format'
+import Image from 'next/image'
+
 
 const Product = ({product}) => {
 
@@ -21,7 +23,7 @@ const Product = ({product}) => {
 
             </Head>
             <h3>{product.name}</h3>
-            <img src={fromImageToUrl(product.image)}/>
+            <Image layout="responsive" width="100vw" height="100vh" src={fromImageToUrl(product.image)}/>
             <h3>{product.name}</h3>
             <p>${twoDecimals(product.price)}</p>
             

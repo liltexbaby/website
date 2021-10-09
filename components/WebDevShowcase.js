@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect, useState, useRef } from 'react'
 import { TweenLite, Power3 } from 'gsap/';
 import gsap from 'gsap'
+import Image from 'next/image'
 
 
 
@@ -107,7 +108,7 @@ export default function WebDevShowcase() {
             <source src={project.coverLink} type="video/mp4"/>
             </video>
             :
-            <img src={project.coverLink}/>
+            <Image layout="responsive" width="100vw" height="75vh" src={project.coverLink}/>
             }
             <div className="projectCoverDescription">
                 <h3>{project.projectName}</h3>

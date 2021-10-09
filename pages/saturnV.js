@@ -9,6 +9,8 @@ import Link from 'next/link';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image'
+
 
 gsap.registerPlugin(ScrollTrigger);
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -111,20 +113,19 @@ function saturnV() {
     let slides = [
         {
         slideNumber: 1,
-        slideLink: "/img/SaturnVHome.jpg",
+        slideLink: "/img/SaturnVHome.mp4",
+        caption:"The home page leading to our three main pathways"
         },
         {
         slideNumber: 2,
         slideLink: "/img/SaturnVHistory.mp4",
-        secondLink:"/img/SaturnVRocket.jpg",
-        h2:"We told the story of the Saturn V in three parts: the History, the Science, and the People, engaging our visitors as we lead them through each category with interactive elements and animated diagrams.",
-        caption:""
+        caption:"Our main page about the history of the rocket"
         },
-        {
-        slideNumber: 3,
-        slideLink: "/img/SaturnVScience.png",
-        caption:"Landing page for the Science"
-        },
+        // {
+        // slideNumber: 3,
+        // slideLink: "/img/SaturnVScience.png",
+        // caption:"Landing page for the Science"
+        // },
                 {
         slideNumber: 4,
         slideLink: "/img/SaturnVLoops.mp4",
@@ -196,7 +197,7 @@ function saturnV() {
     <source src={slide.slideLink} type="video/mp4"/>
     </video>
     :
-    <img className="saturnVCoverVideo"src={slide.slideLink}/>
+    <Image layout="fill"   className="saturnVCoverVideo"src={slide.slideLink}/>
     }
     
     
@@ -210,7 +211,7 @@ function saturnV() {
             <div className="h2Description">
                 
                 <h2>{slide.h2}</h2>
-                <img src={slide.secondLink}/>
+                <Image layout="responsive" width="100vw" height="56.25vh"  src={slide.secondLink}/>
             </div>
             }
 
@@ -237,7 +238,7 @@ function saturnV() {
             <source src={project.coverLink} type="video/mp4"/>
             </video>
             :
-            <img src={project.coverLink}/>
+            <Image layout="responsive" width="100vw" height="75vh" src={project.coverLink}/>
             }
             <div className="projectCoverDescription">
                 <h3>{project.projectName}</h3>

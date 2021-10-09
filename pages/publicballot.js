@@ -9,10 +9,13 @@ import Link from 'next/link';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image'
+
 
 gsap.registerPlugin(ScrollTrigger);
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
+
 
 const customStyles = {
     content: {
@@ -198,7 +201,7 @@ function publicballot() {
             <source src={project.coverLink} type="video/mp4"/>
             </video>
             :
-            <img src={project.coverLink}/>
+            <Image layout="responsive" width="100vw" height="75vh" src={project.coverLink}/>
             }
             <div className="projectCoverDescription">
                 <h3>{project.projectName}</h3>
@@ -230,7 +233,7 @@ function publicballot() {
 
             <div className="publicBallotContainer">
                 <div>
-                <img src="/img/PublicBallotHome.png"/>
+                <Image layout="responsive" width="100vw" height="56.25vh"  src="/img/PublicBallotHome.png"/>
                 </div>
 
                 <div className="projectDetailsContainer">
@@ -273,9 +276,9 @@ function publicballot() {
                 
                 
                 <div ref={addToSlideRefs}>
-                    <Zoom>
-                    <img src={slide.slideLink}/>
-                    </Zoom>
+                 
+                    <Image layout="responsive" width="100vw" height="56.25vh"  src={slide.slideLink}/>
+                   
                 </div>
             ))}
 <br></br>

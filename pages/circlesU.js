@@ -9,6 +9,8 @@ import Link from 'next/link';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image'
+
 
 gsap.registerPlugin(ScrollTrigger);
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -193,7 +195,7 @@ function circlesU() {
     <source src={slide.slideLink} type="video/mp4"/>
     </video>
     :
-    <img className="saturnVCoverVideo"src={slide.slideLink}/>
+    <Image layout="responsive" width="100vw" height="56.25vh" className="saturnVCoverVideo"src={slide.slideLink}/>
     }
     
     
@@ -203,13 +205,7 @@ function circlesU() {
             {slide.caption &&
             <div className="captionContainer">{slide.caption}</div>
             }
-            {slide.h2 &&
-            <div className="h2Description">
-                
-                <h2>{slide.h2}</h2>
-                <img src={slide.secondLink}/>
-            </div>
-            }
+
 
 
         </div>
@@ -234,7 +230,7 @@ function circlesU() {
             <source src={project.coverLink} type="video/mp4"/>
             </video>
             :
-            <img src={project.coverLink}/>
+            <Image layout="responsive" width="100vw" height="75vh" src={project.coverLink}/>
             }
             <div className="projectCoverDescription">
                 <h3>{project.projectName}</h3>
@@ -269,7 +265,7 @@ function circlesU() {
 
             <div className="publicBallotContainer">
                 <div>
-            < img src='/img/CirclesUHero.jpg'/>
+                <Image layout="responsive" width="100vw" height="56.25vh" src='/img/CirclesUHero.jpg'/>
                 </div>
 
                 <div className="projectDetailsContainer">

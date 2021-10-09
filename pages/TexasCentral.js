@@ -9,6 +9,8 @@ import Link from 'next/link';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image'
+
 
 gsap.registerPlugin(ScrollTrigger);
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -213,7 +215,7 @@ function TexasCentral() {
             <source src={project.coverLink} type="video/mp4"/>
             </video>
             :
-            <img src={project.coverLink}/>
+            <Image layout="responsive" width="100vw" height="56.25vh"  src={project.coverLink}/>
             }
             <div className="projectCoverDescription">
                 <h3>{project.projectName}</h3>
@@ -259,9 +261,9 @@ function TexasCentral() {
                 
                 
                 <div ref={addToSlideRefs}>
-                    <Zoom>
-                    <img src={slide.slideLink}/>
-                    </Zoom>
+                   
+                   <Image layout="responsive" width="100vw" height="56.25vh"  src={slide.slideLink}/>
+                   
                 </div>
             ))}
 <br></br>
