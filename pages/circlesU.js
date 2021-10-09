@@ -166,7 +166,7 @@ function CirclesU() {
             projectName: "Saturn V",
             coverLink:"/img/SaturnVLaunch2.mp4",
             technologies: "Wordpress, CSS, After Effects, Salient/WPBakery",
-            description: "a dynamic, animated, central hub for information about the Saturn V rocket and it&apos;s history.",
+            description: "a dynamic, animated, central hub for information about the Saturn V rocket and it's history.",
             link:"/saturnV",
             id:"2",
         },
@@ -272,7 +272,7 @@ function CirclesU() {
                 
                     <div>Role:</div>
                     <br></br>
-                    <div>I am the lead front end developer on this project, utilizing React Native to execute the company&apos;s vison by creating several UI interfaces and screens as well implementing functionality outlined in wireframes. This involved connecting to Google and Facebook APIs for login, along with Google&apos;s maps API to create communities and run them against our own geolocation service, as well as creating our own systems for posting, community generation, and private messaging. </div>
+                    <div>I am the lead front end developer on this project, utilizing React Native to execute the {"company's"} vison by creating several UI interfaces and screens as well implementing functionality outlined in wireframes. This involved connecting to Google and Facebook APIs for login, along with {"Google's"} maps API to create communities and run them against our own geolocation service, as well as creating our own systems for posting, community generation, and private messaging. </div>
                         
                         <br></br>
                     <div>Technologies/skills:</div>
@@ -296,7 +296,7 @@ function CirclesU() {
             </div>
             </div>
             <br></br>
-            <h2>Since the app is still in closed beta, I've provided some screen recordings to demonstrate the app&apos;s basic functionalities.</h2>
+            <h2>Since the app is still in closed beta, I've provided some screen recordings to demonstrate the {"app's"} basic functionalities.</h2>
             <br></br>
             <br></br>
 
@@ -315,7 +315,7 @@ function CirclesU() {
 <br></br>
 <br></br>
 
-<h2>I learned a lot working on this project, as working with a team on a real product like this was an incrdible education. See the what else I&apos;ve learned with my other projects:</h2>
+<h2>I learned a lot working on this project, as working with a team on a real product like this was an incrdible education. See the what else {"I've"} learned with my other projects:</h2>
 <br></br>
 <br></br>
 

@@ -71,7 +71,7 @@ export default function Home({products, paintings}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="introContainer">
-      Hi, my name is Jonathan and I'm a 
+      Hi, my name is Jonathan and {"I'm"} a 
       <Dropdown changeMode={indexMode=>setIndexMode(indexMode)} currentMode={indexMode}/>
       </div>
 

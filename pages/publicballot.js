@@ -264,7 +264,7 @@ function PublicBallot() {
             </div>
             <br></br>
 
-            <h2>This started out as my class project, originally called ourvote. Here's a deck outlining the app's entire proposed functionality.</h2>
+            <h2>This started out as my class project, originally called ourvote. {"Here's"} a deck outlining the {"app's"} entire proposed functionality.</h2>
             <br></br>
             <br></br>
 
@@ -284,7 +284,7 @@ function PublicBallot() {
 <br></br>
 <br></br>
 
-<h2>I'm very proud that this project became a real usable product! I really do love this one. Check out my other two projects on display, I think they're just as cool:</h2>
+<h2>{"I'm"} very proud that this project became a real usable product! I really do love this one. Check out my other two projects on display, I think {"they're"} just as cool:</h2>
 <br></br>
 <br></br>
 

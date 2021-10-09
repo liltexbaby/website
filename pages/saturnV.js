@@ -281,7 +281,7 @@ function SaturnV() {
                 
                     <div>Role:</div>
                     <br></br>
-                    <div>I was the information architect and technical lead on this project, designing the data structure and site organization, using wordpress and after effects to bring my team's illustrations and information to life with animation and interactive content.</div>
+                    <div>I was the information architect and technical lead on this project, designing the data structure and site organization, using wordpress and after effects to bring my {"team's"} illustrations and information to life with animation and interactive content.</div>
                         
                         <br></br>
                     <div>Technologies/skills:</div>
