@@ -76,7 +76,7 @@ export default function WebDevShowcase() {
             projectName: "Saturn V",
             coverLink:"/img/SaturnVLaunch2.mp4",
             technologies: "Wordpress, CSS, After Effects, Salient/WPBakery",
-            description: "a dynamic, animated, central hub for information about the Saturn V rocket and it's history.",
+            description: "a dynamic, animated, central hub for information about the Saturn V rocket and it&apos;s history.",
             link:"/saturnV",
             id:"2",
         },
@@ -125,7 +125,7 @@ export default function WebDevShowcase() {
 
     return (
 <div>
-<h1>I specialize in UI/UX design and front end development using React. Here's my <a href="/JonathanPintoResume2021.pdf" className="dropdownButton">resume.</a></h1>
+<h1>I specialize in UI/UX design and front end development using React. Here&lsquo;s my <a href="/JonathanPintoResume2021.pdf" className="dropdownButton">resume.</a></h1>
 <h1>These are the projects I think I learned the most from.</h1>
         <div 
         ref={el =>{cover = el}}
@@ -156,7 +156,7 @@ export default function WebDevShowcase() {
           <br></br>
         <h1>This website is also kind of a project itself, I hope you enjoy it!</h1>
 
-        <h1>I've made it's github repo available <a className="dropdownButton">here</a> if you'd like to check out it's source code.</h1>
+        <h1>I&apos;ve made it&apos;s github repo available <a className="dropdownButton">here</a> if you&apos;d like to check out it&apos;s source code.</h1>
 
         </div>
 
