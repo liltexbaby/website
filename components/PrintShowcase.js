@@ -2,6 +2,7 @@ import { fromImageToUrl } from '../utils/urls'
 import Link from 'next/link'
 import { useEffect, useState, useRef } from 'react'
 import { TweenLite, Power3 } from 'gsap/';
+import Image from 'next/image'
 
 export default function PrintShowcase({products}) {
 
@@ -24,6 +25,7 @@ export default function PrintShowcase({products}) {
         ref={el =>{sectionRef = el}} className="showcaseContainer">
             
             {products.map(product =>(
+              <div key={product.id}>
                 <Link href={`/products/${product.slug}`}><a>
                 <div className="showcasePaintingContainer">
                 
@@ -33,6 +35,7 @@ export default function PrintShowcase({products}) {
                 </div>
                 </a>
                 </Link>
+                </div>
             ))}
 
 

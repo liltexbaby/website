@@ -104,7 +104,7 @@ export default function PaintingShowcase({paintings}) {
         >
 
 
-<h1>I'm a figurative artist attempting to bridge the gap between technology and tradition, using combined digital and physical processes to create oil paintings and drawings for the information age.</h1>
+<h1>I&apos;m a figurative artist attempting to bridge the gap between technology and tradition, using combined digital and physical processes to create oil paintings and drawings for the information age.</h1>
 
       <div className="showcaseContainer">
 
@@ -112,14 +112,16 @@ export default function PaintingShowcase({paintings}) {
      
             
             {paintings.map(painting =>(
-                <Link href={`/paintings/${painting.slug}`}>
+                <Link 
+                key={painting.id}
+                href={`/paintings/${painting.slug}`}>
                 <div 
                 onMouseEnter={()=>liftUp(painting.id)}
                 onMouseLeave={()=>putDown(painting.id)}
                 className="showcasePaintingContainer"
                 ref={addToRefs}
                 id={painting.id}
-                key={painting.id}
+                
                 >
                 
                 <div>
