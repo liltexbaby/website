@@ -296,7 +296,7 @@ function CirclesU() {
             </div>
             </div>
             <br></br>
-            <h2>Since the app is still in closed beta, I've provided some screen recordings to demonstrate the {"app's"} basic functionalities.</h2>
+            <h2>Since the app is still in closed beta, {"I've"} provided some screen recordings to demonstrate the {"app's"} basic functionalities.</h2>
             <br></br>
             <br></br>
 
