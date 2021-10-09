@@ -30,7 +30,7 @@ const customStyles = {
   };
   
 
-function saturnV() {
+function SaturnV() {
 
 
     let introRef = useRef(null);
@@ -354,5 +354,5 @@ function saturnV() {
     )
 }
 
-export default saturnV
+export default SaturnV
 

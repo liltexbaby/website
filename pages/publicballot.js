@@ -31,7 +31,7 @@ const customStyles = {
   };
   
 
-function publicballot() {
+function PublicBallot() {
 
 
     let introRef = useRef(null);
@@ -317,4 +317,4 @@ function publicballot() {
     )
 }
 
-export default publicballot
+export default PublicBallot

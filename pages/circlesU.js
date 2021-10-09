@@ -30,7 +30,7 @@ const customStyles = {
   };
   
 
-function circlesU() {
+function CirclesU() {
 
 
     let introRef = useRef(null);
@@ -348,5 +348,5 @@ function circlesU() {
     )
 }
 
-export default circlesU
+export default CirclesU
 
