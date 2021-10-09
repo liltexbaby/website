@@ -125,7 +125,7 @@ export default function WebDevShowcase() {
 
     return (
 <div>
-<h1>I specialize in UI/UX design and front end development using React. Here&lsquo;s my <a href="/JonathanPintoResume2021.pdf" className="dropdownButton">resume.</a></h1>
+<h1>I specialize in UI/UX design and front end development using React. {"Here's"} my <a href="/JonathanPintoResume2021.pdf" className="dropdownButton">resume.</a></h1>
 <h1>These are the projects I think I learned the most from.</h1>
         <div 
         ref={el =>{cover = el}}
