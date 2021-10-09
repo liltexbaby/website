@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { TweenMax, Power3, TweenLite } from 'gsap/'
+import Image from 'next/image'
 
 function Dropdown(props) {
 
@@ -19,14 +20,14 @@ function Dropdown(props) {
   
     const handleOpen = () => {
       TweenLite.to(dropdownContent, .8, {marginTop:'0', opacity:1, height:'200px', ease:Power3.easeOut})
-      TweenLite.to(dropdownArrow, .8, {rotation:'180_cw', ease:Power3.easeOut, transformOrigin:"65% 30%"})
+      TweenLite.to(dropdownArrow, .8, {rotation:'180_cw', ease:Power3.easeOut, transformOrigin:"50% 50%"})
 
       setDropdownState(true)
     }
 
     const handleClose = () => {
         TweenLite.to(dropdownContent, .8, {marginTop:'0', opacity:1, height:'0px', ease:Power3.easeOut})
-        TweenLite.to(dropdownArrow, .8, {rotation:'0_ccw', ease:Power3.easeOut, transformOrigin:"65% 30%"})
+        TweenLite.to(dropdownArrow, .8, {rotation:'0_ccw', ease:Power3.easeOut, transformOrigin:"50% 50%"})
 
         setDropdownState(false)
       }
@@ -98,7 +99,9 @@ function Dropdown(props) {
             ref={el =>{dropdown = el}}
             onClick ={dropdownState !== true ? handleOpen : handleClose}>
                  {displayCurrentMode()} 
-                 <img ref={el =>{dropdownArrow = el}} className="downArrow" src="/img/downArrow.png"/>
+                 <div ref={el =>{dropdownArrow = el}} className="downArrow">
+                 <Image  width="10" height="10"   src="/img/downArrow.png"/>
+                 </div>
             </div>
             <div 
             className="dropdownContent"

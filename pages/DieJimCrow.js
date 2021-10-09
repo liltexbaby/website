@@ -249,7 +249,7 @@ function DieJimCrow() {
             {slides.map(slide=>(
                 
                 
-                <div ref={addToSlideRefs}>
+                <div ref={addToSlideRefs} key={slide.slideNumber}>
                    
                     <Image layout="responsive" width="100vw" height="56.25vh"  src={slide.slideLink}/>
                    

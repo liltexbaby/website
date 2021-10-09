@@ -136,6 +136,7 @@ export default function DesignShowcase() {
             ref={addToRefs}
             onMouseEnter={()=>liftUp(project.id)}
             onMouseLeave={()=>putDown(project.id)}
+            key={project.id}
             >
                 {renderCover(project)}
             </div>

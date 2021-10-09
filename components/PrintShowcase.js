@@ -27,7 +27,7 @@ export default function PrintShowcase({products}) {
                 <Link href={`/products/${product.slug}`}><a>
                 <div className="showcasePaintingContainer">
                 
-                <div><img src={fromImageToUrl(product.image)}/> </div>
+                <div><Image layout="responsive" width="100vw" height="56.25vh" src={fromImageToUrl(product.image)}/> </div>
                 <div>{product.name}</div>
                 <div>{product.description}</div>
                 </div>

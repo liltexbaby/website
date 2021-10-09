@@ -305,7 +305,7 @@ function CirclesU() {
 
             <div className="circlesSlides">
             {slides.map(slide=>(
-                <div >
+                <div key={slide.slideNumber}>
                 {renderSlides(slide)}
                 </div>
                 ))}

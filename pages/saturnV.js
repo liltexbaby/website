@@ -312,7 +312,7 @@ function SaturnV() {
 
             <div className="saturnSlides">
             {slides.map(slide=>(
-                <div className={"saturnSlide"+slide.slideNumber}>
+                <div className={"saturnSlide"+slide.slideNumber} key={slide.slideNumber}>
                 {renderSlides(slide)}
                 </div>
                 ))}

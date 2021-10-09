@@ -121,14 +121,14 @@ a:hover {
 }
 
 .dropdownButton {
+  display: flex;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   cursor:pointer;
 }
 
 .downArrow{
-  padding-left: 7px;
-  max-height:7px;
+  margin-left: 7px;
 }
 
 .dropdownButton :hover {

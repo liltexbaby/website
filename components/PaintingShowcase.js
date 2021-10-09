@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react'
 import { TweenLite, Power3 } from 'gsap/';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from 'next/image'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,7 +122,9 @@ export default function PaintingShowcase({paintings}) {
                 key={painting.id}
                 >
                 
-                <div><img src={fromImageToUrl(painting.main_image)}/> </div>
+                <div>
+                <Image layout="responsive" width="100vw" height="100vh" src={fromImageToUrl(painting.main_image)}/> 
+                  </div>
                 <div className="showcasePaintingContainerDescription">
                 <div>{painting.title}</div>
                 <div>{painting.description}</div>
